@@ -159,7 +159,7 @@
         .video-placeholder {
             background: #000;
             border-radius: 8px;
-            padding: 20px;
+            padding: 40px 20px;
             margin-bottom: 20px;
             color: white;
             font-size: 18px;
@@ -167,6 +167,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .video-placeholder:hover {
+            transform: scale(1.02);
+            background: #1a1a1a;
         }
 
         .cta-section {
@@ -422,10 +429,16 @@
 
             <div class="video-container">
                 <h3>📺 Watch This Quick Demo:</h3>
-                <div class="video-placeholder">
-                    [See how easy it is to create stunning local business websites in under 60 seconds]
-                </div>
-                <p style="font-style: italic; color: #666;">Click the button below to see the full presentation and get instant access</p>
+                <a href="https://warriorplus.com/o2/a/xnq82ms/0" style="text-decoration: none;">
+                    <div class="video-placeholder">
+                        <div style="text-align: center;">
+                            <div style="font-size: 64px; margin-bottom: 15px;">▶️</div>
+                            <p style="margin: 0;">Click to Watch Demo Video</p>
+                            <p style="font-size: 14px; opacity: 0.8; margin-top: 10px;">See how easy it is to create stunning websites in 60 seconds</p>
+                        </div>
+                    </div>
+                </a>
+                <p style="font-style: italic; color: #666; margin-top: 15px;">Click above to see the full presentation and get instant access</p>
             </div>
 
             <div class="urgency">
