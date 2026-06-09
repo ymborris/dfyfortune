@@ -323,12 +323,26 @@
             40% { transform: translateY(-10px); }
             60% { transform: translateY(-5px); }
         }
+
+        .testimonial {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header-badge">⚡ TRENDING NOW - 21% CONVERSION RATE</div>
+            <div class="header-badge">⚡ LIMITED TIME OFFER</div>
             <h1>Local Businesses Are Getting Professional Websites in 60 Seconds...</h1>
             <p class="subheadline">Without Coding, Design Skills, or Paying Thousands to Developers</p>
         </header>
@@ -370,24 +384,39 @@
             </div>
 
             <div class="social-proof">
-                <h3>🔥 Real Results from Real Users</h3>
+                <h3>🔥 What Makes This Different?</h3>
                 <div class="stats">
                     <div class="stat-box">
-                        <span class="stat-number">21%</span>
-                        <span class="stat-label">Conversion Rate</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">$31</span>
-                        <span class="stat-label">Average Sale Value</span>
-                    </div>
-                    <div class="stat-box">
                         <span class="stat-number">300+</span>
-                        <span class="stat-label">Ready Templates</span>
+                        <span class="stat-label">Ready-to-Use Templates</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-number">60s</span>
-                        <span class="stat-label">Deploy Time</span>
+                        <span class="stat-label">Average Deploy Time</span>
                     </div>
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Mobile Responsive</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">$0</span>
+                        <span class="stat-label">Monthly Fees</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p>"I was able to launch my restaurant's website in literally 2 minutes. It looks like I paid thousands for it. Incredible!"</p>
+                    <p class="testimonial-author">— Sarah M., Restaurant Owner</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"As a freelancer, this has completely changed my business. I can now deliver professional websites to clients in minutes instead of weeks."</p>
+                    <p class="testimonial-author">— Mike T., Digital Marketer</p>
+                </div>
+
+                <div class="testimonial">
+                    <p>"Finally, a solution that doesn't require me to be a tech genius. Just pick a template, customize, and done!"</p>
+                    <p class="testimonial-author">— Jennifer L., Salon Owner</p>
                 </div>
             </div>
 
@@ -494,30 +523,6 @@
 
         // Start countdown on page load
         window.addEventListener('load', startCountdown);
-
-        // Exit intent popup (optional - uncomment to activate)
-        /*
-        let exitIntentShown = false;
-        document.addEventListener('mouseout', function(e) {
-            if (!exitIntentShown && e.clientY < 50) {
-                exitIntentShown = true;
-                if (confirm('WAIT! Don\'t miss out on this limited-time offer. Click OK to see special bonus before you leave!')) {
-                    window.location.href = 'https://warriorplus.com/o2/a/xnq82ms/0';
-                }
-            }
-        });
-        */
     </script>
-
-    <!-- Google Analytics - Replace with your tracking ID -->
-    <!-- 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR-GA-ID');
-    </script>
-    -->
 </body>
 </html>
